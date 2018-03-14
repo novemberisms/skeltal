@@ -162,6 +162,7 @@ function skeleton_mt:clone(x,y,keep_template)
   for _,b in pairs(self.root.children) do
     iter_clone(b, clone.root, keep_template)
   end
+  clone:update(0)
   return clone
 end
 
